@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="box">
+            <div class="userImage">
+                <img src="user.svg" alt="user profile image">
+                <span class="add"></span>
+            </div>
+
+            <ul class="tab">
+                <li class="active login"><a href="javascript:void(0)">Login</a></li>
+                <li class="singUp"><a href="javascript:void(0)">Sing Up</a></li>
+            </ul>
+
+            <!-- Login From -->
+            <form action="" class="b" id="login" method="POST">
+
+                <div class="input-box">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="mail" id="mail" require>
+                </div>
+
+                <div class="input-box">
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="pass" id="pass" require>
+                </div>
+
+                <button class="submit" type="submit">Submit</button>
+                <p><a href="#">FORGET YOUR PASSWORD?</a></p>
+
+            </form>
+
+            <!-- Sing Up From -->
+            <form action="" class="b" id="singUp" method="POST">
+
+                    <div class="input-box">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" name="name" id="name" require>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="mail" id="mail" require>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="pass" id="pass" require>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="pass2">RETYPE PASSWORD</label>
+                        <input type="password" name="pass2" id="pass2" require>
+                    </div>
+    
+                    <button class="submit" type="submit">Submit</button>
+                    <p><a href="#">FORGET YOUR PASSWORD?</a></p>
+    
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
